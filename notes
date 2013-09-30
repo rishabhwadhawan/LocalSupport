@@ -1,0 +1,9 @@
+Pivotal Tracker url:
+https://www.pivotaltracker.com/story/show/56438038
+
+
+
+To install capybara-webkit first run
+sudo apt-get install qt4-dev-tools libqt4-dev libqt4-core libqt4-gui
+
+

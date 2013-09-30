@@ -83,3 +83,6 @@ gem 'unicorn'
 
 # To use markdown in editing static pages
 gem 'redcarpet'
+
+# Rack middleware that makes app compliant with the 'EU ePrivacy Directive'
+gem 'rack-policy'
