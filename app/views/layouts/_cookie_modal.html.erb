@@ -1,0 +1,38 @@
+<!-- Modal -->
+<div id="cookiesModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Cookies Policy</h3>
+  </div>
+  <div class="modal-body">
+    <p>A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server.
+    </p>
+    <p>Cookies can be used by web servers to identity and track users as they navigate different pages on a website and identify users returning to a website.
+    </p>
+    <p>We will ask you to consent to our use of cookies in accordance with the terms of this policy when you first visit our website.
+    </p>
+    <% button_to_function "Greeting", "alert('Hello world!')", class: "btn ok" %>
+  </div>
+  <div class="modal-footer">
+    <button id="reject" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Reject cookies</button>
+    <button id="accept" class="btn btn-primary"data-dismiss="modal" aria-hidden="true">Accept cookies</button>
+  </div>
+</div>
+
+<script>
+
+    $("#accept").click( function()
+            {
+                alert('cookies accepted');
+                $.post("/CookiePolicyController/allow");
+            }
+    );
+
+    $("#reject").click( function()
+            {
+                alert('cookies rejected');
+            }
+    );
+
+</scrip>
+

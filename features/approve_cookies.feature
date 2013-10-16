@@ -9,4 +9,4 @@ Background:
 Scenario: 
 	Given I am on the home page
 	And I have not approved cookie policy
-	Then I should see a approve cookie policy message
+	Then I should see an approve cookie policy message

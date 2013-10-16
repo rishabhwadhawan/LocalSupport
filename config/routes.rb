@@ -4,12 +4,15 @@ LocalSupport::Application.routes.draw do
   devise_for :users
 
   match 'organizations/search' => 'organizations#search'
+
   #match 'pages/disclaimer' => 'pages#disclaimer'
   #match 'pages/aboutus' => 'pages#aboutus'
   #match 'pages/contact' => 'pages#contact'
 
+
   resources :pages
   resources :organizations
+
 
   # so that static pages are linked directly instead of via /pages/:id
   get ':id', to: 'pages#show', as: :page
