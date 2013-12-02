@@ -8,6 +8,7 @@ LocalSupport::Application.routes.draw do
   #match 'pages/aboutus' => 'pages#aboutus'
   #match 'pages/contact' => 'pages#contact'
   # TODO: set up this: match '/404' => ''...
+  match '/404' => 'errors#not_found'
   resources :pages
   resources :organizations
   resources :organizations do
